@@ -1,0 +1,54 @@
+:root{
+    --color-primary:#eb2f64;
+    --color-primary-light:#ff3366;
+    --color-primary-dark:#BA265D;
+    --color--light-1:#faf9f9;
+    --color--light-2:#f4f2f2;
+    --color--light-3:#f0eeee;
+    --color--light-4:#ccc;
+
+    --color-grey-dark-1:#333;
+    --color-grey-dark-2:#777;
+    --color-grey-dark-3:#999;
+    
+    --shadow-dark:.5rem 1rem 5rem rgba(0, 0, 0, 0.637);
+}
+$big-desktop:75em;
+$tab-land:62.5em;
+$tab-at-900:56.25em;
+$tab-at-600:37.5em;
+html{
+    font-size: 62.5%;
+
+    
+    
+
+
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+
+    &::after,&::before{
+        box-sizing: inherit;
+
+    }
+}
+
+body{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: var(--color-grey-dark-2);
+    background-image: linear-gradient(to right bottom,var(--color-primary),var(--color-primary-light));
+    background-size: cover;
+    background-repeat: no-repeat;
+    //min-height: 100vh;
+
+    @media only screen and (max-width:$tab-at-900){
+        width:100%;
+    }
+}
+
+

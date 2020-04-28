@@ -1,0 +1,83 @@
+.hotel-view{
+    background-color: var(--color--light-3);
+    flex:1;
+    //height:80rem;
+}
+.gallery{
+    display: flex;
+
+    &-box{
+    //width:33.3%;
+    background-color: orangered;
+
+    }
+
+    &-photo{
+        width:100%;
+        display:block;
+    }
+}
+
+
+//overview
+.hotel-overview{
+
+    display:flex;
+    border-bottom: .3px solid var(--color-grey-dark-1);
+    align-items: center;
+
+    &-name{
+        padding:.5rem 1rem;
+        font-size: 1.5rem;
+
+    }
+
+    &-stars{
+
+        display: flex;
+
+        margin-right: auto;
+    }
+
+}
+
+.overview-stars-icon , .hotel-view-stars-icon{
+    height:1.5rem;
+    width: 1.5rem;
+    fill:var(--color-primary-dark);
+}
+
+.hotel-view{
+
+    &-location{
+        padding: .5rem 1rem;
+    }
+
+    
+
+    &-location-btn{
+        border: none;
+        border-bottom: 1px solid var(--color-primary-dark);
+    }
+
+    &-ratings{
+        align-self: stretch;
+        background-color: var(--color-primary-dark);
+        padding: 1.3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-r{
+            font-size: 1.5rem;
+            font-weight: 100;
+            color:whitesmoke ;
+            padding-bottom: .2rem;
+        }
+
+        &-votes{
+            font-size: 1.2rem;
+            color:whitesmoke
+        }
+    }
+}
